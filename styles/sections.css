@@ -201,21 +201,6 @@ section {
   }
 }
 
-@media (max-height: 560px) {
-
-  /* …scale down your name header text */
-  .name-header .first,
-  .name-header .last {
-    /* e.g. cap font‐size at 8vh or 12vw, whichever is smaller */
-    font-size: min(8vh, 12vw);
-    padding: 0 5vw;
-  }
-
-  /* …shrink your education items */
-  .edu-item {
-    width: 30vh;
-  }
-}
 
 .edu-item:hover,
 .edu-item:focus-within {
@@ -284,7 +269,7 @@ section {
   display: inline-block;
   padding: 0.4rem 0.8rem;
   border-radius: 999px;
-  background: #fdfffc;
+  background: #dee0dd;
   font-size: 0.85rem;
 }
 .github-link {
@@ -304,7 +289,7 @@ section {
   max-width: 600px;
   overflow: hidden;
   border-radius: 0.6rem;
-  max-height: 300px;
+  max-height: 350px;
 }
 .slides img {
   width: 100%;
