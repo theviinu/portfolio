@@ -34,6 +34,7 @@ section {
   white-space: nowrap;
   padding: 0 5vw;
 }
+
 .name-header .first {
   text-align: left;
   background-color: #011627;
@@ -197,6 +198,22 @@ section {
 @media (max-width: 500px) {
   .edu-item {
     width: 35vh;
+  }
+}
+
+@media (max-height: 560px) {
+
+  /* …scale down your name header text */
+  .name-header .first,
+  .name-header .last {
+    /* e.g. cap font‐size at 8vh or 12vw, whichever is smaller */
+    font-size: min(8vh, 12vw);
+    padding: 0 5vw;
+  }
+
+  /* …shrink your education items */
+  .edu-item {
+    width: 30vh;
   }
 }
 
