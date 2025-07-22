@@ -279,9 +279,15 @@ section {
   text-decoration: none;
   font-weight: 500;
   transition: color 0.2s;
+  padding: 0.4rem 0.8rem;
+  border-radius: 999px;
+  background: #011627;
+  border: 1px solid #fdfffc;
 }
 .github-link:hover {
-  color: #04aa6d;
+  color: #011627;
+  background-color: #fdfffc;
+  border: 1px solid #011627;
 }
 .web_project-slideshow {
   position: relative;
