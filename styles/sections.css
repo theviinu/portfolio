@@ -1,0 +1,440 @@
+section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1rem;
+}
+
+.section-title {
+  width: 100%;
+  text-align: center;
+  font-size: 4rem;
+  margin: 1rem 0 2rem;
+}
+@media (max-width: 376px) {
+  .section-title {
+    font-size: 3rem;
+  }
+}
+/*The HOME INTRO SECTION */
+
+.name-header {
+  width: 100%;
+  overflow: hidden;
+  font-weight: bolder;
+}
+
+.name-header .first,
+.name-header .last {
+  font-size: min(25vh, 80vw);
+  margin: 0;
+  line-height: 1;
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 0 5vw;
+}
+.name-header .first {
+  text-align: left;
+  background-color: #011627;
+  color: #fdfffc;
+  display: inline-block;
+}
+.name-header .last {
+  text-align: right;
+}
+@media (max-width: 770px) {
+  .name-header .first,
+  .name-header .last {
+    display: inline-block;
+    text-align: left;
+    font-size: min(18vh, 90vw);
+    padding: 0 5vw;
+  }
+}
+@media (max-width: 600px) {
+  .name-header .first,
+  .name-header .last {
+    display: inline-block;
+    text-align: left;
+    font-size: min(14vh, 90vw);
+    padding: 0 5vw;
+  }
+}
+@media (max-width: 490px) {
+  .name-header .first,
+  .name-header .last {
+    display: inline-block;
+    text-align: left;
+    font-size: min(12vh, 90vw);
+    padding: 0 5vw;
+  }
+}
+@media (max-width: 430px) {
+  .name-header .first,
+  .name-header .last {
+    display: inline-block;
+    text-align: left;
+    font-size: min(8.2vh, 90vw);
+    padding: 0 5vw;
+  }
+}
+
+/*The ABOUT ME SECTION */
+
+#about {
+  flex-direction: row;
+  gap: 4rem;
+  font-size: 2.5rem;
+  text-align: left;
+  background-color: #011627;
+  color: #fdfffc;
+}
+#about .about-photo {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+#about .about-photo img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+#about .about-content {
+  flex: 2;
+  max-width: 600px;
+}
+#about .about-content .section-title {
+  margin-bottom: 1rem;
+}
+.highlight {
+  background-color: #fdfffc;
+  color: #011627;
+  font-style: italic;
+}
+@media (max-width: 768px) {
+  #about {
+    flex-direction: column;
+    font-size: 2rem;
+    text-align: center;
+  }
+  #about .about-content {
+    margin-top: 1.5rem;
+  }
+}
+
+/*The SKILLS SECTION */
+
+#skills {
+  flex-direction: column;
+  text-align: center;
+}
+#skills .skill-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 1rem;
+}
+#skills .big-pill {
+  font-size: 2.5rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 50px;
+  font-weight: 500;
+  white-space: nowrap;
+  border: 1px solid;
+}
+#skills .big-pill img {
+  width: 1em;
+  height: 1em;
+  margin-right: 0.5em;
+}
+
+@media (max-width: 770px) {
+  #skills .big-pill {
+    font-size: 1.2rem;
+  }
+}
+/*The EDUCATION SECTION */
+
+#education {
+  background: #011627;
+  color: #fdfffc;
+  padding: 4rem 1rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.education-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+}
+.edu-item {
+  background: #fdfffc;
+  color: #011627;
+  border-radius: 0.6rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1.5rem;
+  width: 95vh;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+@media (max-width: 770px) {
+  .edu-item {
+    width: 50vh;
+  }
+}
+@media (max-width: 500px) {
+  .edu-item {
+    width: 35vh;
+  }
+}
+
+.edu-item:hover,
+.edu-item:focus-within {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.edu-content {
+  text-align: left;
+}
+.qualification {
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin: 0 0 0.4rem;
+  padding: 0.5em;
+  display: inline-block;
+  color: #fdfffc;
+  background-color: #011627;
+  border-radius: 0.6rem;
+}
+.institute {
+  font-size: 1rem;
+  padding-left: 0.5em;
+  margin: 0;
+  font-style: italic;
+}
+
+.period {
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: right;
+  margin-top: 1em;
+}
+
+/*The WEBSITE PROJECTSS SECTION */
+
+#web_projects {
+  gap: 2rem;
+  margin: 1rem;
+  flex-direction: column;
+}
+.web_project-box {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  width: 100%;
+}
+.web_project-info {
+  flex: 1;
+}
+.web_project-title {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+.web_project-description {
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+.pill {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  border-radius: 999px;
+  background: #fdfffc;
+  font-size: 0.85rem;
+}
+.github-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+.github-link:hover {
+  color: #04aa6d;
+}
+.web_project-slideshow {
+  position: relative;
+  flex: 1;
+  max-width: 600px;
+  overflow: hidden;
+  border-radius: 0.6rem;
+  max-height: 300px;
+}
+.slides img {
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+.slides img.active {
+  display: block;
+  max-width: 100vh;
+  max-height: 100vh; 
+  object-fit:cover;
+  object-position: top;
+}
+/* 1) Make the slides wrapper a flex container in fullscreen */
+.web_project-slideshow:fullscreen .slides,
+.web_project-slideshow:-webkit-full-screen .slides {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;    
+  width: 100%;
+}
+
+.web_project-slideshow:fullscreen .slides img,
+.web_project-slideshow:-webkit-full-screen .slides img {
+  max-height: none;
+  max-width: none; 
+  max-width: 100vw;
+  max-height: 100vh; 
+  object-fit: contain;
+}  
+
+.prev,
+.next,
+.fullscreen-btn {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: #fff;
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.prev {
+  top: 50%;
+  left: 1rem;
+  transform: translateY(-50%);
+}
+.next {
+  top: 50%;
+  right: 1rem;
+  transform: translateY(-50%);
+}
+.fullscreen-btn {
+  bottom: 1rem;
+  right: 1rem;
+  font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+  #web_projects,
+  .web_project-box {
+    flex-direction: column;
+  }
+  .web_project-slideshow {
+    width: 100%;
+    max-width: none;
+    margin-top: 2rem;
+  }
+}
+
+/*The CONTACT SECTION */
+
+#contact {
+  min-height: 10vh !important;
+  padding: 4rem 1rem;
+  text-align: center;
+  flex-direction: column;
+  background-color: #011627;
+  color: #fdfffc;
+}
+.contact-details {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 1.5rem;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.contact-details a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  text-decoration: none;
+  border-radius: 0.5rem;
+  background-color: #fdfffc;
+  color: #011627;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, background 0.2s, color 0.2s;
+}
+.contact-details a i {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+.contact-details a span {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+/* Brand‑colored hovers */
+.contact-details a.email:hover {
+  background: #d14836; /* Gmail red */
+  color: #fdfffc;
+}
+.contact-details a.phone:hover {
+  background: #25d366; /* WhatsApp green (for phone) */
+  color: #fdfffc;
+}
+.contact-details a.linkedin:hover {
+  background: #0077b5; /* LinkedIn blue */
+  color: #fdfffc;
+}
+.contact-details a.instagram:hover {
+  /* Instagram gradient */
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+  color: #fdfffc;
+}
+.contact-details a.github:hover {
+  background: #181717; /* GitHub black */
+  color: #fdfffc;
+}
+
+/* common hover lift */
+.contact-details a:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+@media (max-width: 400px) {
+  .contact-details {
+    grid-template-columns: 1fr;
+  }
+}

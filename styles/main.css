@@ -1,0 +1,195 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Figtree, ui-sans-serif, system-ui, sans-serif;
+  font-style: normal;
+  background-color: #fdfffc;
+  color: #011627;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+body a {
+  color: #fdfffc;
+}
+
+.sidebar {
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  width: 56px;
+  background-color: #fdfffc;
+  position: fixed;
+  height: 100%;
+  overflow: visible;
+  transition: width 0.3s;
+  box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.1); /* Optional for a soft shadow effect */
+}
+
+.sidebar:hover {
+  width: 200px;
+}
+
+.sidebar a {
+  display: flex;
+  align-items: center;
+  padding: 16px;
+  text-decoration: none;
+  position: relative;
+  color: #011627 !important;
+  transition: transform 0.2s, background 0.2s, color 0.2s;
+}
+
+.sidebar a i {
+  font-size: 1.2rem;
+  width: 28px;
+  text-align: center;
+}
+@media (max-width: 770px) {
+  .sidebar {
+    width: 50px;
+  }
+  .sidebar a {
+    padding: 14px;
+  }
+  .sidebar a i {
+    font-size: 0.9rem;
+  }
+}
+.social-links {
+  background: #011627; /* LinkedIn blue */
+  color: #fdfffc !important;
+}
+.social-links a{
+  background: #011627; /* LinkedIn blue */
+  color: #fdfffc !important;
+  border-bottom: 1px solid #fdfffc;
+}
+#linkedin:hover {
+  background: #0077b5; /* LinkedIn blue */
+  color: #fdfffc !important;
+}
+#instagram:hover {
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+  color: #fdfffc !important;
+}
+#github:hover {
+  background: #181717; /* GitHub black */
+  color: #fdfffc !important;
+}
+
+.sidebar a .tooltip {
+  margin-left: 10px;
+  opacity: 0;
+  visibility: hidden;
+  white-space: nowrap;
+  transition: opacity 0.3s;
+}
+
+.sidebar:hover a .tooltip {
+  opacity: 1;
+  visibility: visible;
+}
+
+.sidebar a:hover .tooltip {
+  color: #fdfffc;
+}
+.sidebar a:hover i {
+  color: #fdfffc;
+}
+
+.sidebar a:hover {
+  background-color: #011627;
+}
+
+.content {
+  z-index: 0;
+  margin-left: 56px;
+  height: 1000px;
+  transition: margin-left 0.3s;
+}
+@media (max-width: 770px) {
+  .content {
+    margin-left: 50px;
+  }
+}
+.sidebar:hover ~ .content {
+  margin-left: 200px;
+}
+
+#pdfModal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  text-align: center;
+}
+#pdfBox {
+  position: relative;
+  width: 90%;
+  height: 90%;
+  background: #fdfffc;
+  border-radius: 8px;
+  padding: 16px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+#pdfViewer {
+  width: calc(100%);
+  height: calc(100% - 32px);
+  border: none;
+}
+.pdf-controls {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  width: 100%;
+  padding-bottom: 8px;
+  box-sizing: border-box;
+}
+.pdf-controls button,
+.pdf-controls a {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 8px;
+  font-size: 1rem;
+  background: transparent;
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+  color: #011627;
+}
+
+.pdf-controls i {
+  font-size: 1.1rem;
+  line-height: 1;
+}
+.pdf-controls button:hover,
+.pdf-controls a:hover,
+.pdf-controls button:focus,
+.pdf-controls a:focus {
+  opacity: 0.7;
+  outline: none;
+}
