@@ -33,51 +33,17 @@ section {
   overflow: hidden;
   white-space: nowrap;
   padding: 0 5vw;
+  font-size: clamp(2rem, 12vmin, 8rem);
 }
 .name-header .first {
   text-align: left;
   background-color: #011627;
   color: #fdfffc;
   display: inline-block;
+
 }
 .name-header .last {
   text-align: right;
-}
-@media (max-width: 770px) {
-  .name-header .first,
-  .name-header .last {
-    display: inline-block;
-    text-align: left;
-    font-size: min(18vh, 90vw);
-    padding: 0 5vw;
-  }
-}
-@media (max-width: 600px) {
-  .name-header .first,
-  .name-header .last {
-    display: inline-block;
-    text-align: left;
-    font-size: min(14vh, 90vw);
-    padding: 0 5vw;
-  }
-}
-@media (max-width: 490px) {
-  .name-header .first,
-  .name-header .last {
-    display: inline-block;
-    text-align: left;
-    font-size: min(12vh, 90vw);
-    padding: 0 5vw;
-  }
-}
-@media (max-width: 430px) {
-  .name-header .first,
-  .name-header .last {
-    display: inline-block;
-    text-align: left;
-    font-size: min(8.2vh, 90vw);
-    padding: 0 5vw;
-  }
 }
 
 /*The ABOUT ME SECTION */
