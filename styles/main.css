@@ -1,11 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+.figtree-regular {
+  font-family: "Figtree",sans-serif,ui-sans-serif,system-ui;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
 html {
   scroll-behavior: smooth;
 }
 
 body {
   margin: 0;
-  font-family: Figtree, ui-sans-serif, system-ui, sans-serif;
   font-style: normal;
   background-color: #fdfffc;
   color: #011627;
