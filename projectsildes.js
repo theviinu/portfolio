@@ -25,7 +25,7 @@ document.querySelectorAll(".web_project-slideshow").forEach((slideshow) => {
         '<i style="font-size: 2rem;" class="fa-solid fa-circle-xmark"></i>'; // close icon
       fsBtn.title = "Exit full screen";
     } else {
-      fsBtn.innerHTML = '<i class="fa-solid fa-expand"></i>'; // full‑screen icon
+      fsBtn.innerHTML = '<i class="fa-solid fa-expand"></i> FullScreen'; // full‑screen icon
       fsBtn.title = "Full screen";
     }
   }
