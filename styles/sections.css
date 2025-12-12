@@ -334,6 +334,7 @@ section {
   max-width: 600px;
   max-height: 425px;
   overflow: hidden;
+  border: 2px solid #011627;
   border-radius: 0.6rem;
 }
 
